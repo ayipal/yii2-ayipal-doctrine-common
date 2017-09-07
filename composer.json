@@ -1,5 +1,5 @@
 {
-  "name": "abexto/yii2-ayipal-doctrine-common",
+  "name": "abexto/yii2-logeia-doctrine-common",
   "keywords": ["yii2"],
   "type": "yii2-extension",  
   "license": "BSD-3-Clause",
@@ -11,6 +11,6 @@
         }
     ],
     "require": {
-      "abexto/yii2-ayipal-common": "*"
+      "abexto/yii2-logeia-common": "*"
     }
 }
