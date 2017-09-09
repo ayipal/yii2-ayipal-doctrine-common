@@ -12,5 +12,11 @@
     ],
     "require": {
       "abexto/yii2-logeia-common": "dev-master"
+    },
+    "autoload": {
+        "psr-4": {
+            "abexto\\logeia\\yii\\common\\": "src/",
+            "abexto\\logeia\\yii\\common\\tests": "tests/"
+        }
     }
 }
