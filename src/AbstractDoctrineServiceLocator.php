@@ -29,50 +29,13 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-namespace abexto\logeia\yii\doctrine\common\base;
+namespace abexto\logeia\yii\doctrine\common;
 
 /**
- * Description of AbstractDoctrineComponent2
+ * Description of DoctrineServiceLocator
  *
  * @author Andreas Prucha, Abexto - Helicon Software Development
  */
-class AbstractDoctrineWrapperComponent extends \abexto\logeia\yii\common\base\AbstractInstanceWrapperComponent
+class AbstractDoctrineServiceLocator extends base\AbstractDoctrineServiceLocator
 {
-
-    public $doctrineServiceLocator = 'dc';
-
-    /**
-     * @var Wrapped Doctrine class
-     */
-    public $doctrineClass = null;
-    
-    public $additional = [];
-
-    public function init()
-    {
-        parent::init();
-        $this->doctrineServiceLocator = \yii\di\Instance::ensure($this->doctrineServiceLocator,
-                                                                 \abexto\logeia\yii\doctrine\common\AbstractDoctrineServiceLocator::class);
-    }
-
-    protected function constructNewInst()
-    {
-        return (new $this->doctrineClass());
-    }
-
-    protected function assignPropertiesToinst($inst)
-    {
-        foreach ($inst as $k => $v) {
-            $setter = 'set'.ucfirst($k);
-            $inst->$setter($v);
-        }
-    }
-
-    protected function newInst()
-    {
-        $result = $this->constructNewInst();
-        $this->assignPropertiesToinst($result);
-        return $result;
-    }
-
 }
