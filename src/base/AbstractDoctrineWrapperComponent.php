@@ -36,7 +36,10 @@ namespace abexto\logeia\yii\doctrine\common\base;
  *
  * @author Andreas Prucha, Abexto - Helicon Software Development
  */
-class AbstractDoctrineComponent extends \abexto\logeia\yii\common\base\AbstractInstanceWrapperComponent
+class AbstractDoctrineWrapperComponent extends \abexto\logeia\yii\common\base\AbstractInstanceWrapperComponent
 {
-    //put your code here
+    /**
+     * @var \yii\base\Component|AbstractDoctrineWrapperComponent Owner of the component
+     */
+    public $owner = null;
 }
