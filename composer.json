@@ -16,7 +16,7 @@
     "autoload": {
         "psr-4": {
             "abexto\\logeia\\yii\\common\\": "src/",
-            "abexto\\logeia\\yii\\common\\tests": "tests/"
+            "abexto\\logeia\\yii\\common\\tests\\": "tests/"
         }
     }
 }
