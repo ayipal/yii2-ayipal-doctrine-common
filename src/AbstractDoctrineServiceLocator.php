@@ -36,6 +36,6 @@ namespace abexto\logeia\yii\doctrine\common;
  *
  * @author Andreas Prucha, Abexto - Helicon Software Development
  */
-class AbstractDoctrineServiceLocator extends base\AbstractDoctrineServiceLocator
+class AbstractDoctrineServiceLocator extends \yii\di\ServiceLocator
 {
 }
