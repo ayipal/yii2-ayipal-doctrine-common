@@ -1,0 +1,7 @@
+<phpunit bootstrap="autoload.php">
+  <testsuites>
+    <testsuite name="yii2-logeia-doctrine-common TestSuite">
+      <directory suffix="Test.php">./unit</directory>
+    </testsuite>
+  </testsuites>
+</phpunit>

@@ -1,22 +1,49 @@
 {
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "https://github.com/logeia/yii2-logeia-phpunit"
+    },
+    {
+      "type": "vcs",
+      "url": "https://github.com/logeia/yii2-logeia-common"
+    },
+    {
+      "type": "vcs",
+      "url": "https://github.com/logeia/yii2-logeia-doctrine-common"
+    },
+    {
+      "type": "vcs",
+      "url": "https://github.com/logeia/yii2-logeia-doctrine-dbal"
+    },
+    {
+      "type": "vcs",
+      "url": "https://github.com/logeia/yii2-logeia-doctrine-orm"
+    }
+  ],
+  "minimum-stability": "dev",
   "name": "abexto/yii2-logeia-doctrine-common",
   "keywords": ["yii2"],
   "type": "yii2-extension",  
   "license": "BSD-3-Clause",
-    "authors": [
-        {
-            "name": "Andreas Prucha, Abexto - Helicon Software Development",
-            "email": "andreas.prucha@gmail.com",
-            "role": "Developer"
-        }
-    ],
-    "require": {
-      "abexto/yii2-logeia-common": "dev-master"
-    },
-    "autoload": {
-        "psr-4": {
-            "abexto\\logeia\\yii\\common\\": "src/",
-            "abexto\\logeia\\yii\\common\\tests\\": "tests/"
-        }
+  "authors": [
+    {
+      "name": "Andreas Prucha, Abexto - Helicon Software Development",
+      "email": "andreas.prucha@gmail.com",
+      "role": "Developer"
     }
+  ],
+  "require": {
+    "abexto/yii2-logeia-common": "dev-master"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "<6",
+    "abexto/yii2-logeia-phpunit": "dev-master"
+  },
+  "autoload": {
+    "psr-4": {
+      "abexto\\logeia\\yii\\doctrine\\common\\": "src/",
+      "abexto\\logeia\\yii\\doctrine\\common\\tests\\": "tests/"
+    }
+  }
 }
