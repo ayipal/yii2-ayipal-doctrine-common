@@ -55,7 +55,7 @@ class AbstractDoctrineWrapperComponent extends \abexto\logeia\yii\common\base\Ab
                                                                  \abexto\logeia\yii\doctrine\common\AbstractDoctrineServiceLocator::class);
     }
 
-    protected function constructNewInst()
+    protected function createNewInst()
     {
         return (new $this->doctrineClass());
     }
@@ -70,7 +70,7 @@ class AbstractDoctrineWrapperComponent extends \abexto\logeia\yii\common\base\Ab
 
     protected function newInst()
     {
-        $result = $this->constructNewInst();
+        $result = $this->createNewInst();
         $this->assignPropertiesToinst($result);
         return $result;
     }
